@@ -13,12 +13,57 @@ h1, h2 {
     color: #342F3F;
 }
 
- #sidebar-nav:link {
+ #sidebar-nav a {
     text-decoration: none;
     color: #342F3F;
 }
 
-#sidebar-nav:hover {
+#sidebar-nav a:hover {
     color: #6C63FF;
+}
+
+#image-stack {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 20px;
+}
+
+#image-stack img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid;
+    margin: 10px;
+    background-color: #806CDA;
+    opacity: 50%;
+    filter: brightness(70%);
+    filter: saturate(80%);
+
+}
+
+#image-stack-1:hover {
+   opacity: 1;
+}
+
+#footer {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+    background-color: #424C55;
+    max-height: 100px;
+    width: 100%;
+}
+
+#footer h4 {
+    color: white;
+    float: left;
+}
+
+#footer p {
+    color: #B9B1E2;
+    font-size: 12px;
+
 }
 
