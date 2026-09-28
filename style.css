@@ -1,3 +1,30 @@
+/* Requirement 2 - Color and Graphic Strategy
+1) How did you decide on your site’s color scheme?
+    The background color was ripped directly from my model site, geokash.com (when you go to the iPod and select purple as the bg color). It also complimented well with May's purple collar in the hero image. I wanted a largely monochromatic color palette so the rest of the palette was darker shades of that light purple background color. 
+2) Provide me with the color palette you will use within your site and provide the hexadecimals values for each color.
+    From lightest to darkest: 
+    BG color: #E8E3FF
+    Lighter containers: #d5cef3
+    Footer font color: #B9B1E2
+    May image stack header: #806CDA
+    Accentuating deep purple container (hero image background, faq answer color: #816dda
+    Footer container, header and general font text color: #424C55
+3) What areas of your site will be impacted by your color choice? Be descriptive in identifying where the various colors in your color palette will be depicted.
+    As described above. I want the deeper purple (#816dda) to divide up the lighter background colors and utilize more containers with deeper purples to break up information throughout the three sections.
+    I also want to utlize hover properties to cleverly display information, using color more muted purples to highlight darker text. 
+*/
+
+/* Requirement 3 - Font Strategy
+1) What font(s) will you use for the <body>(default declarations), <p> and <h1> - <h6>(Your individual project must incorporate at least 3 levels of headings.)HTML tags? A CSS comment will also be be placed above each style rule that has the font or font-family property.
+    IBM Plex Mono font will be used for the whole site. 
+2) What are the different weights and sizes of the heading and paragraph tags?
+    Header tags will be IBM Plex heavy and paragraph tags will be IBM Plex Mono Medium. 
+3) What is your desired line-height, word-spacing, and letter-spacing?
+    Line-height will be a little compressed (0.5-1). Word-spacing and letter-spacing will be standard for IBM Plex Mono font family.
+*/
+
+/*This site is still very much a HUGE work in progress! */
+
 body {
     background-color: #E8E3FF;
     font-family: "IBM Plex Mono", serif;
@@ -10,7 +37,7 @@ img {
 
 h1, h2 {
     font-size: 18px;
-    color: #342F3F;
+    color: #424C55
 }
 
 h1 {
@@ -29,13 +56,13 @@ h2 {
 
  #sidebar-nav a {
     text-decoration: none;
-    color: #342F3F;
+    color: #424C55;
     font-size: 10px;
     line-height: .75;
 }
 
 #sidebar-nav a:hover {
-    color: #6C63FF;
+    color: #816dda;
 }
 
 #image-stack {
@@ -72,6 +99,13 @@ h2 {
 .quote-container {
     padding-right: 20px;
     z-index: 2;
+    background: linear-gradient(to bottom, #b8acee, #816dda);
+    width: 100vw;
+    height: 250px;
+}
+
+.quote-container p {
+    padding: 20px, auto, 20px, 50px;
 }
 
 .main-quote {
@@ -80,12 +114,12 @@ h2 {
     line-height: 1.2;
     width: 550px;
     color: #2c2930;
+    padding: 20px;
 }
 
 .may-image-container {
     position: relative;
     height: 100%;
-    background-color: #222222;
 }
 
 .transparent-may {
@@ -112,7 +146,6 @@ h2 {
     border: 3px solid #000000;
     width: 260px;
     height: 260px;
-    background-color: #fff;
     flex-shrink: 0;
 }
 
@@ -134,8 +167,67 @@ h2 {
     color: #1a1a1a;
 }
 
+#faq {
+    margin-bottom: 50px;
+
+}
+
 #faq span {
-    color: #816dda
+    color: #816dda;
+}
+
+.faq-coffee {
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #d5cef3;
+}
+
+.faq-slap {
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #d5cef3;
+}
+
+.faq-preventative {
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #d5cef3;
+}
+
+.faq-music {
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #d5cef3;
+}
+
+.faq-criminal {
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #d5cef3;
+}
+
+.faq-babble {
+    border: 3px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: #d5cef3;
 }
 
 #footer {
