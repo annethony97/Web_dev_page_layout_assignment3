@@ -13,9 +13,25 @@ h1, h2 {
     color: #342F3F;
 }
 
+h1 {
+    margin-right: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
  #sidebar-nav a {
     text-decoration: none;
     color: #342F3F;
+    font-size: 10px;
+    line-height: .75;
 }
 
 #sidebar-nav a:hover {
@@ -39,31 +55,105 @@ h1, h2 {
     opacity: 50%;
     filter: brightness(70%);
     filter: saturate(80%);
-
 }
 
 #image-stack-1:hover {
    opacity: 1;
 }
 
+#hero-section {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    position: relative;
+    min-height: 450px;
+}
+
+.quote-container {
+    padding-right: 20px;
+    z-index: 2;
+}
+
+.main-quote {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1.2;
+    width: 550px;
+    color: #2c2930;
+}
+
+.may-image-container {
+    position: relative;
+    height: 100%;
+    background-color: #222222;
+}
+
+.transparent-may {
+    position: absolute;
+    bottom: -30px;
+    right: -40px;
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.ipg-section {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+}
+
+.map-card {
+    position: relative;
+    border: 3px solid #000000;
+    width: 260px;
+    height: 260px;
+    background-color: #fff;
+    flex-shrink: 0;
+}
+
+.ipg-map-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ipg-text-block {
+    max-width: 320px;
+    padding-top: 40px;
+    float: right;
+}
+
+.text-block p {
+    font-size: 11px;
+    line-height: 1.4;
+    color: #1a1a1a;
+}
+
+#faq span {
+    color: #816dda
+}
+
 #footer {
-    margin: 0;
     display: flex;
     flex-direction: row;
-    min-height: 100vh;
     background-color: #424C55;
     max-height: 100px;
-    width: 100%;
+    width: 100vw !important;
 }
 
 #footer h4 {
     color: white;
     float: left;
+    padding: 10px;
+    font-size: 12px;
 }
 
 #footer p {
     color: #B9B1E2;
     font-size: 12px;
-
 }
-
