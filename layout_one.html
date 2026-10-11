@@ -16,6 +16,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+        <!--Swiper script for FAQ-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     </head>
     <body>
         <main>
@@ -30,26 +34,25 @@
             </div>
             </section>
         <!--May Image Grid-->
-        <!--Need to add hover elements: text that pops up when each image is hovered that tells a bit more about who May is-->
-        <!--Image 1: "May is my 6-year-old 60-lb brindle labrador-hound mix that I adopted in 2021!"-->
-        <!-- Image 2: "her government name is Sad Girl May because she always looks so damn sad all the time."-->
-        <!-- Image 3: "she likes freeze-dried beef liver, peanut butter, music, being in the way, and Philip Seymour Hoffman."-->
-        <!--Image 4: "she's normally anxious, but with some love, patience, and practice, she will warm up to you and be ready to walk with you!"-->
         <h2>about sad girl may</h2>
-        <section id="image-stack">
-                <div class="image-stack-1">
-                    <img src="img/imgstack1.jpg" alt="A brown and black dog laying on a couch, looking backwards.">
-                </div>
-                <div class="image-stack-2">
-                    <img src="img/imgstack2.jpg" alt="A close-up of a dog's face with sad eyes.">
-                </div>
-                <div class="image-stack-3">
-                    <img src="img/imgstack3.JPEG" alt="A brown and black dog looking sad away from the camera.">
-                </div>
-                <div class="image-stack-4">
-                    <img src="img/imgstack4.jpg" alt="A close-up of a sleepy dog's face on a bed.">
-                </div>
-            </section>
+       <section id="image-stack">
+            <div class="image-stack-1" tabindex="0">
+                <img src="img/imgstack1.jpg" alt="A brown and black dog laying on a couch, looking backwards.">
+                <span class="image-overlay">May is my 6-year-old 60-lb brindle labrador-hound mix that I adopted in 2021!</span>
+            </div>
+            <div class="image-stack-2" tabindex="0">
+                <img src="img/imgstack2.jpg" alt="A close-up of a dog's face with sad eyes.">
+                <span class="image-overlay">Her government name is Sad Girl May because she always looks so damn sad all the time.</span>
+            </div>
+            <div class="image-stack-3" tabindex="0">
+                <img src="img/imgstack3.JPEG" alt="A brown and black dog looking sad away from the camera.">
+                <span class="image-overlay">She likes freeze-dried beef liver, peanut butter, music, and being in the way.</span>
+            </div>
+            <div class="image-stack-4" tabindex="0">
+                <img src="img/imgstack4.jpg" alt="A close-up of a sleepy dog's face on a bed.">
+                <span class="image-overlay">She's normally anxious, but with some love, patience, and practice, she will warm up to you and be ready to walk with you!</span>
+            </div>
+        </section>
          <!--Tips-->
             <section id="tips">
             <div>
@@ -86,32 +89,37 @@
             </section>
         <!--FAQ Slides-->
             <h2>sad girl may faq</h2>
-            <section id="faq">
-            <!--i do not know how to make a slide carousel yet......-->
-                <div class="faq-coffee">
-                    <p>Q: how many cups of coffee is may allowed to have each day?</p>
-                    <span>A: you must cut her off at 5 cups, no more.</span>
+            <section id="faq" class="swiper faq-swiper">
+                <div class="swiper-wrapper">
+                    <div class="faq-coffee swiper-slide">
+                        <p>Q: how many cups of coffee is may allowed to have each day?</p>
+                        <span>A: you must cut her off at 5 cups, no more.</span>
+                    </div>
+                    <div class="faq-slap swiper-slide">
+                        <p>Q: your dog slapped me after i stopped petting her for a little bit. is she allowed to do that?</p>
+                        <span>A: yes, she is allowed to hit. all dogsitters sign a waiver that dictates that may is indeed allowed to hit.</span>
+                    </div>
+                    <div class="faq-preventative swiper-slide">
+                        <p>Q: does she take a preventative for fleas, ticks, and heartworm?</p>
+                        <span>A: yes, she takes credelio quattro on the first of every month. she's also up-to-date on all her vaccines.</span>
+                    </div>
+                    <div class="faq-music swiper-slide">
+                        <p>Q: what music is may allowed to listen to?</p>
+                        <span>A: she can listen to everything, because i think it's important for her cultural development and expansion of knowledge. HOWEVER, she cannot listen to experimental 90's krautrock. please do NOT play Neu! for may.</span>
+                    </div>
+                    <div class="faq-criminal swiper-slide">
+                        <p>Q: does may have a criminal record?</p>
+                        <span>A: legally, i'm not supposed to say.</span>
+                    </div>
+                    <div class="faq-babble swiper-slide">
+                        <p>Q: may is talking to me. what is she saying?</p>
+                        <span>A: it has been my lifelong mission to figure that out. she's a hound-mix so she just loves to babble. just babble back to her.</span>
+                    </div>
                 </div>
-                <div class="faq-slap">
-                    <p>Q: your dog slapped me after i stopped petting her for a little bit. is she allowed to do that?</p>
-                    <span>A: yes, she is allowed to hit. all dogsitters sign a waiver that dictates that may is indeed allowed to hit.</span>
-                </div>
-                <div class="faq-preventative">
-                    <p>Q: does she have take a preventative for fleas, ticks, and heartworm?</p>
-                    <span>A: yes, she takes credelio quattro on the first of every month.</span>
-                </div>
-                <div class="faq-music">
-                    <p>Q: what music is may allowed to listen to?</p>
-                    <span>A: she can listen to everything, because i think it's important for her cultural development and expansion of knowledge. HOWEVER, she cannot listen to experimental 90's krautrock. please do NOT play Neu! for may.</span>
-                </div>
-                <div class="faq-criminal">
-                    <p>Q: does may have a criminal record?</p>
-                    <span>A: legally, i'm not supposed to say.</span>
-                </div>
-                <div class="faq-babble">
-                    <p>Q: may is talking to me. what is she saying?</p>
-                    <span>A: it has been my lifelong mission to figure that out. she's a hound-mix so she just loves to babble. just babble back to her.</span>
-                </div>
+
+                <div class="swiper-button-prev" aria-label="Previous FAQ"></div>
+                <div class="swiper-button-next" aria-label="Next FAQ"></div>
+                <div class="swiper-pagination"></div>
             </section>
 
         </main>
@@ -130,5 +138,23 @@
             <p>1039 W. Lawrence Ave</p>
             </aside>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            new Swiper(".faq-swiper", {
+                slidesPerView: 1,
+                spaceBetween: 24,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                keyboard: {
+                    enabled: true,
+                },
+            });
+        </script>
     </body>
 </html>
